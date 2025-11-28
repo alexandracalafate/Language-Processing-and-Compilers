@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alínea A - Gráficos</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 40px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+            gap: 20px; /* Espaço entre os gráficos */
+        }
+        img {
+            width: 100%; /* Largura máxima de 100% para os gráficos */
+            height: auto; /* Altura automática para manter a proporção */
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Gráficos da Alínea A</h1>
+    <div class="grid-container">
+        <img src="./Imagens/graficos_seculo_17.png" alt="Gráfico Século 17">
+        <img src="./Imagens/graficos_seculo_18.png" alt="Gráfico Século 18">
+        <img src="./Imagens/graficos_seculo_19.png" alt="Gráfico Século 19">
+        <img src="./Imagens/graficos_seculo_20.png" alt="Gráfico Século 20">
+    </div>
+
+    <button class="back-button" onclick="window.history.back()">Voltar</button>
+</body>
+</html>
